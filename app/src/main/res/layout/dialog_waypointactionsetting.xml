@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waypoint Actions"
+        android:layout_gravity="center_horizontal">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waypoint No. ">
+        </TextView>
+
+        <Spinner
+            android:id="@+id/waypointNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true">
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Action:">
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/actions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+            <RadioButton
+                android:id="@+id/photoMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take Photo"/>
+            <RadioButton
+                android:id="@+id/videoModeStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Record Video"/>
+            <RadioButton
+                android:id="@+id/videoModeStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop Recording"/>
+            <RadioButton
+                android:id="@+id/removeAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove Action"/>
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/actions2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/stay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stay"/>
+            <RadioButton
+                android:id="@+id/gimbalPitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gimbal Pitch"/>
+            <RadioButton
+                android:id="@+id/aircraftRotation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rotate Aircraft"/>
+            <RadioButton
+                android:id="@+id/removeAction2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove Action"/>
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    </LinearLayout>
